@@ -11,3 +11,8 @@
 .dialog-image img{width:100%;height:auto;min-height:0;max-height:75vh;object-fit:contain}
 .feature-art img{object-fit:contain;background:#092e25}
 @media(max-width:650px){.dialog-image img{height:auto;max-height:280px;object-fit:contain}}
+
+/* Balanced artwork framing: fill the card without narrow letterboxing or aggressive zoom. */
+.product-card .image-button{height:auto;aspect-ratio:4/3;overflow:hidden;display:block;background:#092e25}
+.product-card .image-button>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;transform:none!important;transition:none!important}
+.product-card .image-button:hover>img{transform:none!important}
