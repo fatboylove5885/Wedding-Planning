@@ -16,3 +16,11 @@
 .product-card .image-button{height:auto;aspect-ratio:4/3;overflow:hidden;display:block;background:#092e25}
 .product-card .image-button>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;transform:none!important;transition:none!important}
 .product-card .image-button:hover>img{transform:none!important}
+
+/* FINAL: full original product images, with no cropping, stretching or zoom. */
+.product-card .image-button{display:block!important;width:100%;height:auto!important;aspect-ratio:auto!important;overflow:visible!important;background:transparent!important;padding:0!important;text-align:left}
+.product-card .image-button>img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;transform:none!important;filter:none!important;transition:none!important}
+.product-card .image-button:hover>img{transform:none!important}
+.product-card .image-button::after{display:none!important}
+.product-card .problem-overlay{position:relative!important;inset:auto!important;display:flex!important;gap:6px!important;padding:16px 18px!important;background:#102e24!important;color:#fff9ec!important}
+.product-card .problem-overlay strong{font-size:clamp(20px,2vw,26px)!important;line-height:1.2!important}
